@@ -1,0 +1,711 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Banner */
+/* .wrapperHero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+} */
+.wrapperHero{
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* margin-bottom: 5%; */
+}
+.wrapperHero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.logo img {
+    width: 100px;
+    /*  logo size */
+}
+
+.navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.navigation a {
+    margin: 30px;
+    /* space between navigation links */
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    /* font size of navigation links */
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+
+.bannerText p {
+    padding: 0;
+    margin: 0;
+}
+
+.bannerText .mainText {
+    font-size: clamp(40px, 3vw, 24px);
+    font-weight: bold;
+    letter-spacing: 5%;
+}
+
+.bannerText .subText {
+    font-size: clamp(26px, 3vw, 16px);
+    letter-spacing: 5%;
+}
+
+
+/* aboutSec */
+
+.aboutSec {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aboutSec .aboutT {
+    flex: 1;
+    height: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.aboutSec .imgContAbt {
+    flex: 2;
+    height: 80%;
+}
+
+.abtTextWrapper {
+    height: 100%;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.abtTextWrapper p {
+    margin: 0;
+}
+
+.abtTitle {
+    font-weight: bold;
+    font-size: clamp(24px, 3vw, 18px);
+    letter-spacing: 2%;
+}
+
+.abtDes {
+    font-weight: normal;
+    font-size: clamp(16px, 3vw, 12px);
+    margin-top: 2% !important;
+}
+
+.abtBtn {
+    margin-top: 4%;
+    width: 100px;
+    background-color: #000000;
+    height: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.aboutSec .imgContAbt img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*Latest Section  */
+
+.lastest {
+    height: 70vh;
+}
+
+.lastest .latTopic {
+    font-weight: bold;
+    font-size: clamp(26px, 3vw, 18px);
+    margin: 5% 0 2% 3%;
+    position: relative;
+    padding-top: 1%;
+}
+
+.lastest .latTopic::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    background-color: black;
+    height: 3px;
+    top: 0;
+    left: 75px;
+    transform: translate(-50%, -50%);
+}
+
+.imgCon {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: relative !important;
+}
+
+.imgCon::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #000000, #3d3d3d);
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgCon:hover::before {
+    opacity: 0.7;
+}
+
+.splide__slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    position: absolute;
+    color: white;
+    bottom: 7%;
+    left: 3%;
+    width: 90%;
+}
+
+.textContainer p {
+    margin: 0;
+}
+
+.placeTop {
+    font-weight: bolder;
+    font-size: clamp(20px, 3vw, 14px);
+    margin-bottom: 2% !important;
+    position: relative;
+}
+
+.placeTop::after {
+    position: absolute;
+    content: "";
+    background-color: green;
+    height: 2px;
+    width: 20%;
+    bottom: -15%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.placeDes {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topic-places {
+    font-weight: bolder;
+    font-size: clamp(26px, 3vw, 18px);
+    margin-left: 1%;
+    position: relative;
+}
+
+.topic-places::before {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+}
+
+/* Get To Know Bhutan */
+
+.getToKnowWrapper .getToKnowTopic {
+    font-weight: bold;
+    font-size: clamp(26px, 3vw, 18px);
+    margin: 5% 0 2% 3%;
+    position: relative;
+    padding-top: 1%;
+
+}
+
+.getToKnowWrapper .getToKnowTopic::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    background-color: black;
+    height: 3px;
+    top: 0;
+    left: 75px;
+    transform: translate(-50%, -50%);
+}
+
+.getToKnow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 2%;
+}
+
+
+.GetTitem {
+    background-color: #f1f8ff;
+    text-align: center;
+    height: 450px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.GetTitem:hover {
+    filter: brightness(0.5);
+}
+
+.GetTitem .getImgCon {
+    height: 300px;
+    width: 100%;
+
+}
+
+
+.GetTitem .getImgCon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.getDesCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 95%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.getDesCon p {
+    margin: 0;
+}
+
+.getDesCon .getTopic {
+    font-weight: bolder;
+    font-size: clamp(20px, 3vw, 14px);
+    margin: 2% 0 !important;
+    letter-spacing: 5%
+}
+
+
+.getDesCon .getDes {
+    font-size: clamp(16px, 3vw, 12px);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+
+/* Bhutan map section */
+.bhutanmap-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: 5%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bhutanmapbg.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+    /* Ensure the background is behind other content */
+}
+
+.slider-container {
+    position: relative;
+    /* Position relative to allow absolute positioning of content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Occupy full height of the section */
+    z-index: 1;
+    /* Ensure slider content is displayed over the background */
+}
+
+.slide {
+    width: 100%;
+    text-align: center;
+    /* Center the content */
+    position: relative;
+    /* Ensure content is positioned relative to this element */
+    display: none;
+    /* Hide all slides by default */
+}
+
+.slide.active {
+    display: flex;
+    /* Show only the active slide */
+}
+
+.content,
+.bhutanmap-container {
+    flex: 1;
+    /* Make both elements take equal space */
+    padding: 0 20px;
+    /* Add padding as needed */
+}
+
+.content,
+.bhutanmap-container {
+    flex: 1;
+    /* Make both elements take equal space */
+    padding: 0 20px;
+    /* Add padding as needed */
+}
+
+.content {
+    position: relative;
+}
+
+.region-info {
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.region-name {
+    font-size: clamp(28px, 3vw, 18px);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.region-description {
+    font-size: clamp(20px, 3vw, 14px);
+}
+
+.bhutanmap-container img {
+    max-width: 100%;
+    /* Ensure map fits container */
+    height: auto;
+    filter: brightness(0.9);
+}
+
+.prev-slide,
+.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 2;
+    /* Ensure slider arrows are displayed over the background */
+}
+
+.prev-slide {
+    left: 20px;
+}
+
+.next-slide {
+    right: 20px;
+}
+
+/* Query Section */
+
+
+.faq-section {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: clamp(16px, 3vw, 12px);
+}
+
+.faq{
+    font-size: clamp(26px, 3vw, 18px);
+    position: relative;
+    font-weight: bold;
+}
+
+.faq::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    background-color: black;
+    height: 3px;
+    top: -30%;
+    left: 75px;
+    transform: translate(-50%, -50%);
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    position: relative; 
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.question i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+}
+
+.answer.show {
+    display: block;
+}
+
+.question.show i {
+    transform: translateY(-50%) rotate(180deg); 
+}
+
+
+/* featured activity and services */
+
+.featured-activities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0;
+}
+
+.card-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: calc(30% - 40px);
+    max-width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px 20px;
+    box-shadow: rgba(7, 7, 7, 0.2) 0px 2px 8px 0px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* tour packages */
+.travel-packages-section {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.tour-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(7, 7, 7, 0.2) 0px 2px 8px 0px;
+    width: calc(25% - 20px);
+    margin: 0 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-content {
+    position: relative;
+}
+
+.tour-image {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp{
+    position: fixed;
+    font-size: 40px;
+    bottom: 6%;
+    right: 5%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    background-color: #25D366;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.whatsapp a{
+    text-decoration: none;
+    color: white;
+}
