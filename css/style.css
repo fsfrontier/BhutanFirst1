@@ -1,0 +1,185 @@
+/* Styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Add margin between navigation links */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.main-content {
+    padding-bottom: 80px; /* Adjust according to footer height */
+}
+
+/* Styles specific to index.html */
+#popular-destinations {
+    /* Add styles for popular destinations banner */
+}
+
+/* Styles specific to travel packages */
+#travel-packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles specific to tour.html */
+#states {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.state {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.state img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the logo */
+.logo img {
+    width: 50px; /* Adjust the size of the logo */
+    height: 50px; /* Adjust the size of the logo */
+    border-radius: 50%; /* Make the logo circular */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#popular_tours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* .card:hover {
+    transform: scale(1.05);
+} */
+.card:hover:not(.about-card) {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card p {
+    padding: 15px;
+    text-align: center;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #000500; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Set the font size */
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
